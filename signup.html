@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Signup</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Web Development"/>
+        <meta name="keywords" content="HTML, Part 1, Content"/>
+        <meta name= "Arsalan S" content= "MC"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1> BMW FAN CLUB</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Photo Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="1series.html">BMW 1 Series</a>
+                        <a href="2series.html">BMW 2 Series</a>
+                        <a href="3series.html">BMW 3 Series</a>
+                        <a href="4series.html">BMW 4 Series</a>
+                        <a href="5series.html">BMW 5 Series</a>
+                        <a href="6series.html">BMW 6 Series</a>
+                        <a href="7series.html">BMW 7 Series</a>
+                        <a href="xseries.html">BMW X Series</a> 
+                        <a href="iseries.html">BMW i Series</a>
+                    </div>
+                </li>
+                <li><a href="signup.html">Club Signup Form</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul> 
+
+        </nav>
+        <div>
+            <form action="submit.html" name="fanform">
+
+                <fieldset>
+                    <legend>Member Details:</legend>
+                    Registeration Number/Licence Plate Number:<br>
+                    <input type="text" name="SID" pattern="^s[0-9]{9}"/><br>
+                    Given Name:<br>
+                    <input type="text" name="fname" pattern="^[A-Za-z]*"/><br>
+                    Family Name:<br>
+                    <input type="text" name="lname" pattern="^[A-Za-z]*"/><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Your BMW Type:</legend>
+
+
+                    <label><input type="radio" name="bmwtype[]" value="individual" required/>Individual Series</label><br>
+                    <label><input type="radio" name="bmwtype[]" value="msport"/>M Sport Performance</label><br>
+                    <label><input type="radio" name="bmwtype[]" value="alpina"/>Alpina Performance</label><br>
+                    <label><input type="radio" name="bmwtype[]" value="gforce"/>G Force Performance</label><br>
+                    <p><label>Your BMW Series <select name="series">
+                        <option value="0" selected="selected" required>
+                        </option>
+                        <option value="1">1 Series</option>
+                        <option value="2">2 Series</option>
+                        <option value="3">3 Series</option>
+                        <option value="4">4 Series</option>
+                        <option value="5">5 Series</option>
+                        <option value="6">6 Series</option>
+                        <option value="7">7 Series</option>
+                        <option value="8">8 Series</option>
+                        <option value="x1">X1 Series</option>
+                        <option value="x2">X2 Series</option>
+                        <option value="x3">X3 Series</option>
+                        <option value="x4">X4 Series</option>
+                        <option value="x5">X5 Series</option>
+                        <option value="x6">X6 Series</option>
+                        <option value="i3">i3</option>
+                        <option value="i8">i8</option>
+                        <option value="z3">z3</option>
+                        <option value="z4">z4</option>
+                        <option value="z8">z8</option>
+
+                        </select>
+                        </label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Type</legend>
+                    <label><input type="checkbox" name="membership[]" value="month" />1 Month Membership</label><br>
+                    <label><input type="checkbox" name="membership[]" value="3month"/>3 Months Membership</label><br>
+                    <label><input type="checkbox" name="membership[]" value="6month"/>6 Months Membership</label><br>
+                    <label><input type="checkbox" name="membership[]" value="1year"/>1 Year Membership</label><br>
+                    <label><input type="checkbox" name="membership[]" value="5years" checked/>5 Year Membership</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Payment Details
+                    </legend>
+                    Full Name:<br>
+                    <input type="text" placeholder= "Name on Credit/Debit Card" name="cdn" pattern="^[0-9]{50}"/><br>
+                    Credit/Debit Card Number:<br>
+                    <input type="text" placeholder= "16 Digts on Card" name="ccn" pattern="^[0-9]{16}"/><br>
+                    Expirty Date:<br>
+                    <input type="date" placeholder= "mm/yy" name="Date" required>
+                    <br>CVV:<br>
+                    <input type="text" placeholder= "3-4 Digits Behind Card" name="CCV" required>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Date of Birth</legend>
+                    <label> Date:<br>
+                        <input type="date" placeholder= "dd/mm/yyyy" name="Date" required></label>
+
+                </fieldset>
+
+                <input type="Submit" value="Book"/>
+                <input type="Reset" value="Reset form"/>
+            </form>
+            <br>
+        </div>
+        <div>
+            <footer>
+            <p>Copyright © 2017 BMW FAN CLUB. All Rights Reserved.</p>
+            </footer> 
+        </div>
+
+
+    </body>
+</html> 

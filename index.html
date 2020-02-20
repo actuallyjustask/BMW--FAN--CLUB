@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>BMW FAN CLUB</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Web Development"/>
+	<meta name="keywords" content="HTML, Part 1, Content"/>
+	<meta name= "Arsalan S" content= "MC"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    
+<body>
+	<h1> BMW FAN CLUB </h1>
+    <nav>
+         <ul>
+  <li><a href="index.html">Home</a></li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Photo Gallery</a>
+    <div class="dropdown-content">
+      <a href="1series.html">BMW 1 Series</a>
+      <a href="2series.html">BMW 2 Series</a>
+      <a href="3series.html">BMW 3 Series</a>
+      <a href="4series.html">BMW 4 Series</a>
+      <a href="5series.html">BMW 5 Series</a>
+      <a href="6series.html">BMW 6 Series</a>
+      <a href="7series.html">BMW 7 Series</a>
+      <a href="xseries.html">BMW X Series</a> 
+      <a href="iseries.html">BMW i Series</a>
+    </div>
+  </li>
+  <li><a href="signup.html">Club Signup Form</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul> 
+     
+    </nav>
+    <br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/slideshow/1.jpg" style= "width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slideshow/2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slideshow/3.jpg" style="width:100%">
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    </div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); 
+}
+</script>
+    
+    <aside>
+    <a class="twitter-timeline" data-width="511" data-height="500" data-theme="dark" href="https://twitter.com/BMW">Tweets by BMW</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </aside>
+    <br>
+    <div>
+     <footer>
+        
+  <p>Copyright © 2017 BMW FAN CLUB. All Rights Reserved.</p>
+         
+</footer> 
+        </div>
+    
+</body>
+</html> 
